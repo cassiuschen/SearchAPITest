@@ -145,7 +145,8 @@ a {
       border-radius: 0 0 8px 8px;
       white-space: pre !important;
       font-size: 12px;
-      width: 100%; }
+      width: 100%;
+      word-wrap: break-word; }
   @media (max-width: 800px) {
     .detail {
       display: none; } }
@@ -165,7 +166,9 @@ a {
   border: none;
   -webkit-appearance: searchfield;
   padding: 12px;
-  font-size: 16px 20px; }
+  font-size: 16px 20px;
+  display: block;
+  box-sizing: border-box; }
   .search_bar input.search:active, .search_bar input.search:focus {
     outline: none !important; }
   @media (max-width: 800px) {
