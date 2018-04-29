@@ -46,7 +46,7 @@ class App extends Component {
       return $.ajax({
         method: 'GET',
         async: true,
-        url: 'http://127.0.0.1:9292/ai_digger',
+        url: 'http://api.cassiuschen.com/ai_digger',
         data: aiDiggerParams,
         crossDomain: true,
         dataType: 'json'
