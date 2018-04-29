@@ -1,0 +1,173 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  width: 100%;
+  height: 100%; }
+
+.container {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  height: calc(100vh - 190px); }
+
+a {
+  text-decoration: none !important; }
+
+.results .result, .detail .basic_info, .search_bar input.search {
+  background-color: #fff;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
+  transition: box-shadow 0.28s, transform 0.28s;
+  border-radius: 8px; }
+
+.results .result {
+  font-size: 0;
+  color: #2a2a2a;
+  display: flex; }
+  .results .result .cover {
+    display: inline-block;
+    vertical-align: middle;
+    width: 210px;
+    min-height: 140px;
+    background-color: #f0f0f0;
+    border-radius: 8px 0 0 8px; }
+  .results .result .info {
+    display: inline-block;
+    flex: 1;
+    vertical-align: middle;
+    padding: 12px;
+    text-decoration-style: none; }
+    .results .result .info .title {
+      font-size: 18px;
+      text-decoration: none !important; }
+    .results .result .info .des {
+      font-size: 14px; }
+      .results .result .info .des em {
+        color: #eb2835;
+        font-style: normal;
+        margin: 0 2px; }
+    .results .result .info .extra {
+      display: block; }
+      .results .result .info .extra .author {
+        font-size: 12px;
+        color: #aaaaaa; }
+      .results .result .info .extra .time {
+        float: right;
+        font-size: 12px;
+        color: #aaaaaa; }
+
+.results {
+  width: 600px;
+  display: inline-block;
+  height: 100%;
+  overflow: auto; }
+  .results .benchmark {
+    display: flex;
+    width: 100%;
+    height: 36px;
+    font-size: 12px;
+    line-height: 36px;
+    background-color: #fafafa;
+    color: #aaaaaa; }
+    .results .benchmark span {
+      flex: 1;
+      margin: 0 20px; }
+    .results .benchmark .duration {
+      text-align: right; }
+  .results .result {
+    width: 570px;
+    margin: 15px auto;
+    display: flex; }
+    .results .result:hover {
+      box-shadow: 0 3px 15px rgba(0, 0, 0, 0.12);
+      transform: scale(1.01);
+      cursor: pointer; }
+  @media (min-width: 1440px) {
+    .results {
+      width: 800px; }
+      .results .result {
+        width: 760px; } }
+  @media (max-width: 800px) {
+    .results {
+      width: 100%; }
+      .results .result {
+        width: 90%; } }
+
+.detail {
+  flex: 1;
+  background-color: #f2f2f2;
+  display: inline-block;
+  padding: 20px;
+  overflow: auto;
+  height: 100%;
+  box-sizing: border-box; }
+  .detail .mask {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100px auto;
+    opacity: .1; }
+  .detail .basic_info {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 18px;
+    box-sizing: border-box; }
+    .detail .basic_info dl {
+      flex: 1;
+      margin: 0; }
+    .detail .basic_info dt {
+      font-size: 12px;
+      font-weight: bolder;
+      color: #777777; }
+    .detail .basic_info dd {
+      font-size: 14px;
+      font-weight: normal;
+      margin: 0;
+      margin-bottom: 12px; }
+    .detail .basic_info span.tag {
+      display: inline-block;
+      border-radius: 4px;
+      padding: 4px 8px;
+      font-size: 14px;
+      margin: 2px 0;
+      margin-right: 4px;
+      background-color: #f0f0f0; }
+    .detail .basic_info .inline {
+      display: block;
+      flex: 0 0 100%; }
+    .detail .basic_info code {
+      display: block;
+      background-color: #fafafa;
+      margin: 0 -18px -18px -18px;
+      padding: 18px;
+      border-radius: 0 0 8px 8px;
+      white-space: pre !important;
+      font-size: 12px;
+      width: 100%; }
+  @media (max-width: 800px) {
+    .detail {
+      display: none; } }
+
+#scrollDetector {
+  width: 100%;
+  height: 40px;
+  background-size: auto 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: .2; }
+
+.search_bar input.search {
+  width: 700px;
+  height: 42px;
+  margin: 12px auto;
+  border: none;
+  -webkit-appearance: searchfield;
+  padding: 12px;
+  font-size: 16px 20px; }
+  .search_bar input.search:active, .search_bar input.search:focus {
+    outline: none !important; }
+  @media (max-width: 800px) {
+    .search_bar input.search {
+      width: 90%; } }
